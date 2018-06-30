@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Andela Shopping Cart Calculator</title>
+
+    <!-- Bootstrap CSS -->
+
+    <!-- custom CSS -->
+    <link href="style/style.css" rel="stylesheet">
+
+
+</head>
+<!-- body-->
+<body>
+    <!-- container-->
+	<div class="container">
+        <h4>Shopping Cart Calculator By: <br>Babafemi Adojutelegan</h2>
+        <!-- form-->
+		<form role="form">
+        <div class="item">
+            <span>Item  &nbsp &nbsp &nbsp</span>
+            <select  onchange="chain()" id="item" name="item">
+            	<option value="">Choose item</option>
+	            <option value="banana">Banana</option>
+	            <option value="melon">Water Melon</option>
+	            <option value="apples">Apples</option>
+	        </select>
+        </div>
+        <br>
+        <div class="price">
+            <span>Price &#8358 &nbsp</span>
+            <input type="number" class="form-control" id="price" value="00.00" disabled>
+        </div>
+        <br>
+        <div class="qty">
+        <span`">Quantity</span>
+    	<input type="number" class="form-control" value="1" id="qty" disabled="">
+    	
+          <button onclick="minus()"type="button"><</button>
+          <button onclick="plus()" type="button">></button>
+		</div>
+		</br>
+		<div class="buttons">
+		<button onclick="add_element();return false">Add to Cart</button>
+        <button onclick="clear()">Clear Cart</button>
+        
+    	</div>
+        <br>
+        <!-- table-->
+        <table class="table" >
+            <thead>
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Sub Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row" id="dispitem"></td>
+                    <td scope="row" id="dispqty"></td>
+                    <td scope="row" id="dispprice"></td>
+                    <td scope="row" id="dispsub"></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">total</th>
+                    <td scope="row"></td>
+                    <td scope="row"></td>
+                    <td scope="row" id="disptotal"></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- tabke end-->
+    </form>
+    <!-- form end-->
+	</div>
+	<!-- container end-->
+
+    <!-- mmyFuntions -->
+    <script src="style/myfunctions.js"></script>	
+    
+</body>
+<!--body end-->
+</html>
+ 

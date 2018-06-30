@@ -1,0 +1,32 @@
+body{
+  position: relative;
+}
+.spinner input {
+  text-align: right;
+}
+#qty {
+  width: 150px;
+}
+#item {
+  width: 150px;
+  margin-top: 30px;
+}
+#price {
+  width: 150px;
+}
+.table{
+  width: 300px;
+}
+.buttons{
+  margin-left: 60px;
+}
+.container{
+  border: 1px solid;
+  border-color: #008000;
+  width: 400px;
+  padding-top: 20px;
+  padding-left: 100px;
+  margin-left: 350px;
+  margin-top: 100px;
+  padding-bottom: 20px
+}
